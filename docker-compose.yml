@@ -9,7 +9,6 @@ services:
       - ./docker/shared/lib:/code/lib
   experiment:
     build: ./
-    image: virtualcommons/foraging:latest
     ports:
       - "16001:16001"
     volumes:
@@ -27,4 +26,4 @@ services:
     volumes:
       - ./docker/shared/html:/usr/share/nginx/html
     ports:
-      - "80:80"
+      - "8080:80"

@@ -6,7 +6,6 @@
     <vendor>The Virtual Commons, a software initiative led by the Center for the Study of Institutional Diversity at Arizona State University</vendor>
     <homepage href="http://commons.asu.edu"/>
     <description>Foraging 2D facilitator interface to control the Foraging 2D experiment.</description>
-    <icon href="commons.gif"/> 
     <offline-allowed />
   </information> 
   <security>

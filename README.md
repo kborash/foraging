@@ -43,6 +43,8 @@ _NOTE_: The docker build currently binds to port 80 instead of port 8080 - if yo
 * *Back up your data:* when you are done running an experiment make sure you back up the binary data saved in `docker/data`. 
 * Convert binary data stored in `DATA_DIR` to a variety of plaintext files via `docker-compose run data` or customize the statistics you see by writing a custom `SaveFileProcessor` and adding it to the list in `ForagingSaveFileConverter`.You can select the data directory with the `DATA_DIR` environment variable and convert the XML savefiles with the `XML` environment variable, e.g., `docker-compose run -e DATA_DIR=<data-directory> -eXML=xml data`.
 * Run `docker-compose down` or `docker system prune` to clean up your docker images when you're done.
+* You must delete the docker folder from the project root directory before rebuilding. Otherwise, you'll run into an error message noting that the jnlp contains jars signed by multiple keys
+* To run this application with a self signed certificate you need to add the site to the Exception Site List in the Security tab of the Configure Java application. 
 
 ### Install all dependencies manually
 
